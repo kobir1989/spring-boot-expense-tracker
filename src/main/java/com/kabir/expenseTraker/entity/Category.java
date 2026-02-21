@@ -3,6 +3,7 @@ package com.kabir.expenseTraker.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
@@ -11,5 +12,12 @@ public class Category {
   @Id
   @GeneratedValue(strategy=GenerationType.IDENTITY)
   private Long id; 
+
   private String category;
+
+  public Category() {}
+  public Long getId(){ return id;}
+
+  public String getCategory(){ return category;}
+  public String setCategory (String category) {this.category = category;return category;}
 }
