@@ -1,4 +1,4 @@
-package com.kabir.expenseTraker.entity;
+package com.kabir.expenseTracker.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,5 +19,8 @@ public class Category {
   public Long getId(){ return id;}
 
   public String getCategory(){ return category;}
-  public String setCategory (String category) {this.category = category;return category;}
+  public String setCategory (String category) {
+    this.category = category;
+    return null;
+  }
 }
